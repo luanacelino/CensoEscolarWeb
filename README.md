@@ -74,7 +74,7 @@ Após executar o comando, acesse o endereço local apresentado pelo Vite no term
 
 Projeto relacionado à obtenção e preparação dos dados utilizados na aplicação CensoEscolarWeb.
 
-[Repositório CensoEscolarDataApp](COLE_AQUI_O_LINK_DO_REPOSITORIO)
+[Repositório CensoEscolarDataApp](https://github.com/luanacelino/CensoEscolarDataApp)
 
 ## Desenvolvimento
 
