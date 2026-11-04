@@ -1,16 +1,83 @@
-# React + Vite
+# Censo Escolar 2025 — Paraíba
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicação web desenvolvida com **React** para consulta e visualização de dados do Censo Escolar 2025 referentes às instituições de ensino do estado da Paraíba.
 
-Currently, two official plugins are available:
+## Sobre o projeto
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+O Censo Escolar é uma importante fonte de informações sobre a educação brasileira. Este projeto tem como objetivo facilitar a visualização e a consulta dos dados das instituições de ensino da Paraíba, apresentando informações de maneira organizada e acessível.
 
-## React Compiler
+A aplicação utiliza uma base de dados em formato JSON para disponibilizar informações sobre as instituições e suas matrículas.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Funcionalidades
 
-## Expanding the ESLint configuration
+- Página inicial com apresentação do projeto.
+- Navegação entre as páginas da aplicação.
+- Carrossel de imagens.
+- Leitura e exibição dos dados de um arquivo JSON.
+- Ranking das 10 instituições com maior quantidade de matrículas.
+- Pesquisa de instituições por nome.
+- Pesquisa e filtragem por município.
+- Visualização detalhada das informações de uma instituição selecionada.
+- Interface responsiva e adaptada para diferentes tamanhos de tela.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Tecnologias utilizadas
+
+- React
+- JavaScript
+- Vite
+- Bootstrap 5
+- React-Bootstrap
+- CSS
+- React Router DOM
+
+## Base de dados
+
+A aplicação utiliza o arquivo `instituicoes_pb_2025.json`, contendo registros de instituições de ensino da Paraíba referentes ao ano de 2025.
+
+Os dados são utilizados para alimentar o ranking, os filtros de pesquisa e as informações detalhadas apresentadas na aplicação.
+
+## Como executar o projeto
+
+### 1. Pré-requisitos
+
+É necessário ter o Node.js e o npm instalados.
+
+### 2. Clonar o repositório
+
+```bash
+git https://github.com/luanacelino/CensoEscolarWeb.git
+```
+
+### 3. Entrar na pasta do projeto
+
+```bash
+cd CensoEscolarWeb
+```
+
+### 4. Instalar as dependências
+
+```bash
+npm install
+```
+
+### 5. Executar a aplicação
+
+```bash
+npm run dev
+```
+
+Após executar o comando, acesse o endereço local apresentado pelo Vite no terminal, geralmente `http://localhost:5173`.
+
+## Projeto relacionado
+
+**CensoEscolarDataApp**
+
+Projeto relacionado à obtenção e preparação dos dados utilizados na aplicação CensoEscolarWeb.
+
+[Repositório CensoEscolarDataApp](COLE_AQUI_O_LINK_DO_REPOSITORIO)
+
+## Desenvolvimento
+
+Projeto acadêmico desenvolvido como atividade prática, utilizando tecnologias de desenvolvimento web e dados educacionais do estado da Paraíba.
+
+**Censo Escolar 2025 — Paraíba**
