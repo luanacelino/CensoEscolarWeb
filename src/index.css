@@ -1,0 +1,285 @@
+
+/* ========================================
+   IDENTIDADE VISUAL - CENSO ESCOLAR PB
+   Azul petróleo, cobre, marfim e grafite
+======================================== */
+
+:root {
+  font-family: Arial, Helvetica, sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Paleta principal */
+  --cor-petroleo: #254B59;
+  --cor-petroleo-escuro: #1C3944;
+  --cor-cobre: #C17C55;
+  --cor-cobre-escuro: #A96340;
+  --cor-marfim: #F3EFE8;
+  --cor-grafite: #34383A;
+  --cor-cinza: #747A7D;
+  --cor-branco: #FFFFFF;
+
+  /* Integração com o Bootstrap */
+  --bs-primary: #254B59;
+  --bs-primary-rgb: 37, 75, 89;
+
+  --bs-secondary: #747A7D;
+  --bs-secondary-rgb: 116, 122, 125;
+
+  --bs-body-bg: #F3EFE8;
+  --bs-body-color: #34383A;
+
+  --bs-link-color: #254B59;
+  --bs-link-hover-color: #C17C55;
+
+  color: var(--cor-grafite);
+  background-color: var(--cor-marfim);
+
+  font-weight: 400;
+}
+
+/* Padronização dos elementos */
+* {
+  box-sizing: border-box;
+}
+
+/* Configurações do documento */
+html,
+body {
+  width: 100%;
+  min-width: 320px;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Corpo da aplicação */
+body {
+  min-height: 100vh;
+  background-color: var(--cor-marfim);
+  color: var(--cor-grafite);
+}
+
+/* Elemento principal do React */
+#root {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Imagens responsivas */
+img {
+  max-width: 100%;
+}
+
+/* Evita que textos longos ultrapassem seus elementos */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* Links */
+a {
+  text-decoration: none;
+}
+
+/* ========================================
+   NAVBAR
+======================================== */
+
+.navbar-censo {
+  background-color: var(--cor-petroleo);
+  padding-top: 15px;
+  padding-bottom: 15px;
+  box-shadow: 0 2px 10px rgba(28, 57, 68, 0.12);
+}
+
+.navbar-censo .navbar-brand {
+  color: var(--cor-branco);
+  font-weight: 700;
+  letter-spacing: 0.3px;
+}
+
+.navbar-censo .navbar-brand:hover {
+  color: var(--cor-cobre);
+}
+
+.navbar-censo .nav-link {
+  color: rgba(255, 255, 255, 0.82);
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.navbar-censo .nav-link:hover,
+.navbar-censo .nav-link.active {
+  color: var(--cor-cobre);
+}
+
+/* ========================================
+   CARDS
+======================================== */
+
+.card {
+  border-color: rgba(37, 75, 89, 0.10);
+  border-radius: 12px;
+}
+
+.card-title {
+  color: var(--cor-grafite);
+}
+
+.card .text-muted {
+  color: var(--cor-cinza) !important;
+}
+
+/* ========================================
+   BOTÕES
+======================================== */
+
+.btn-primary {
+  --bs-btn-bg: var(--cor-petroleo);
+  --bs-btn-border-color: var(--cor-petroleo);
+  --bs-btn-hover-bg: var(--cor-petroleo-escuro);
+  --bs-btn-hover-border-color: var(--cor-petroleo-escuro);
+  --bs-btn-active-bg: var(--cor-petroleo-escuro);
+  --bs-btn-active-border-color: var(--cor-petroleo-escuro);
+}
+
+.btn-outline-primary {
+  --bs-btn-color: var(--cor-petroleo);
+  --bs-btn-border-color: var(--cor-petroleo);
+  --bs-btn-hover-bg: var(--cor-petroleo);
+  --bs-btn-hover-border-color: var(--cor-petroleo);
+}
+
+/* ========================================
+   CAMPOS DE FORMULÁRIO
+======================================== */
+
+.form-control,
+.form-select {
+  border-color: #D5D1CA;
+  border-radius: 8px;
+  background-color: var(--cor-branco);
+  color: var(--cor-grafite);
+  padding: 10px 12px;
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: var(--cor-cobre);
+  box-shadow: 0 0 0 0.2rem rgba(193, 124, 85, 0.18);
+}
+
+/* ========================================
+   TABELAS
+======================================== */
+
+.table-primary {
+  --bs-table-bg: var(--cor-petroleo);
+  --bs-table-color: var(--cor-branco);
+  --bs-table-border-color: rgba(255, 255, 255, 0.15);
+}
+
+.table-primary th {
+  color: var(--cor-branco);
+  font-weight: 600;
+}
+
+.table {
+  --bs-table-striped-bg: rgba(37, 75, 89, 0.045);
+  --bs-table-hover-bg: rgba(193, 124, 85, 0.10);
+  background-color: var(--cor-branco);
+}
+
+.table th,
+.table td {
+  padding: 12px;
+}
+
+/* ========================================
+   FUNDOS E DESTAQUES
+======================================== */
+
+.bg-light {
+  background-color: #EAE6DE !important;
+}
+
+.bg-primary {
+  background-color: var(--cor-petroleo) !important;
+}
+
+.text-primary {
+  color: var(--cor-petroleo) !important;
+}
+
+.border-primary {
+  border-color: var(--cor-cobre) !important;
+}
+
+/* ========================================
+   RESULTADOS DA PESQUISA
+======================================== */
+
+.list-group-item {
+  border-color: #E2DED7;
+  background-color: var(--cor-branco);
+  color: var(--cor-grafite);
+}
+
+.list-group-item-action:hover {
+  background-color: #F3EFE8;
+  color: var(--cor-petroleo);
+}
+
+.list-group-item.active {
+  background-color: var(--cor-petroleo);
+  border-color: var(--cor-petroleo);
+  color: var(--cor-branco);
+}
+
+/* ========================================
+   RODAPÉ
+======================================== */
+
+.footer-censo {
+  background-color: var(--cor-grafite);
+  color: var(--cor-branco);
+}
+
+.footer-censo a {
+  color: rgba(255, 255, 255, 0.85);
+  transition: color 0.2s ease;
+}
+
+.footer-censo a:hover {
+  color: var(--cor-cobre);
+}
+
+/* ========================================
+   RESPONSIVIDADE
+======================================== */
+
+@media (max-width: 576px) {
+  body {
+    font-size: 15px;
+  }
+
+  .navbar-censo {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+
+  .table th,
+  .table td {
+    padding: 9px;
+  }
+}

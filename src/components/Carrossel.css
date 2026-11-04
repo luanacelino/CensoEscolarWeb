@@ -1,0 +1,98 @@
+
+/* Área principal do carrossel */
+.carrossel-censo {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 5px 18px rgba(28, 57, 68, 0.12);
+}
+
+/* Imagens */
+.carrossel-censo .carousel-img {
+  display: block;
+  width: 100%;
+  height: 380px;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Camada escura para melhorar a leitura das legendas */
+.carrossel-censo .carousel-item {
+  position: relative;
+}
+
+.carrossel-censo .carousel-item::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(28, 57, 68, 0.88),
+    rgba(28, 57, 68, 0.20) 65%,
+    transparent
+  );
+  pointer-events: none;
+}
+
+/* Legendas */
+.carrossel-censo .carrossel-legenda {
+  z-index: 2;
+  right: 10%;
+  bottom: 30px;
+  left: 10%;
+  text-align: center;
+}
+
+.carrossel-censo .carrossel-legenda h3 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #FFFFFF;
+  text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.carrossel-censo .carrossel-legenda p {
+  font-size: 1rem;
+  margin-bottom: 0;
+  color: #F3EFE8;
+  text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+/* Controles de navegação */
+.carrossel-censo .carousel-control-prev,
+.carrossel-censo .carousel-control-next {
+  z-index: 3;
+  width: 10%;
+}
+
+/* Indicadores */
+.carrossel-censo .carousel-indicators {
+  z-index: 4;
+  margin-bottom: 10px;
+}
+
+.carrossel-censo .carousel-indicators [data-bs-target] {
+  background-color: #C17C55;
+}
+
+/* Adaptação para celulares */
+@media (max-width: 576px) {
+  .carrossel-censo .carousel-img {
+    height: 260px;
+  }
+
+  .carrossel-censo .carrossel-legenda {
+    right: 8%;
+    bottom: 25px;
+    left: 8%;
+  }
+
+  .carrossel-censo .carrossel-legenda h3 {
+    font-size: 1.25rem;
+    margin-bottom: 6px;
+  }
+
+  .carrossel-censo .carrossel-legenda p {
+    font-size: 0.85rem;
+  }
+}
