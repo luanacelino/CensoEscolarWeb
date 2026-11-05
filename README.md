@@ -45,7 +45,7 @@ Os dados são utilizados para alimentar o ranking, os filtros de pesquisa e as i
 ### 2. Clonar o repositório
 
 ```bash
-git https://github.com/luanacelino/CensoEscolarWeb.git
+git clone https://github.com/luanacelino/CensoEscolarWeb.git
 ```
 
 ### 3. Entrar na pasta do projeto
